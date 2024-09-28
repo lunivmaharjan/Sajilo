@@ -7,19 +7,25 @@ import logo from "./Assets/logo.png"
 function Navbar() {
   return (
     <div className='nav'>
-        <div className="menItems">
-        <div className="flex">
+        
+        <div className="">
           <Link to={"/"}>
           <img src={logo} alt='fireSpot'/>
           </Link>
         </div>
-            <Link to={"/login"}>
+        <div className='flex' style={{
+            width:350,
+           
+            height:48,
+        }}>
+            <Link to={"/login"} className='button text-decoration-none primary'>
                 Login
             </Link>
-            <a href={"/signup"}>
+            <Link to={"/signup"} className='button text-decoration-none secondary'>
                 Signup
-            </a>
+            </Link>
         </div>
+        
       
     </div>
   )
