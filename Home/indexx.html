@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_app</title>
+    <link rel="stylesheet" href="appp.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        /* Set the size of the map container */
+        #map {
+            height: 100vh;
+            /* Adjust the height of the map */
+            width: 100%;
+            /* Full width */
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <img src="" class="logo">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#nearbystation">Nearby Stations</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Favourates</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search For EV Station">
+                <button type="submit">Search</button>
+            </div>
+            <div class="account-button">
+                <a href="logout.html">Logout</a>
+
+            </div>
+        </div>
+
+        </div>
+    </nav>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script>
+        var map = L.map('map').setView([27.7172, 85.3240], 13);
+
+        var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        })
+        osm.addTo(map);
+
+    </script>
+    <script>
+        var markers = [
+            L.marker([27.8172, 85.3240]),
+            L.marker([27.6172, 85.3540]),
+            L.marker([27.3172, 85.380]),
+            L.marker([27.5172, 85.3640]),
+            L.marker([27.7172, 85.3940])
+        ];
+
+        var group = L.featureGroup(markers).addTo(map);
+
+        setTimeout(function () {
+            map.fitBounds(group.getBounds());
+        }, 1000);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        var stations = [
+            { lat: 27.7172, lng: 85.3240, name: "Ram-Ram EV Station"  },
+            { lat: 27.6710, lng: 85.4298, name: "Kathmandu EV Station" },
+            { lat: 27.6816, lng: 85.3222, name: "Green-Patan EV Station" },
+            { lat: 27.6234, lng: 85.5420, name: "Ram EV Station" },
+            { lat: 27.6980, lng: 85.4982, name: "Kathmandu Station" },
+            { lat: 27.7834, lng: 85.3330, name: "Patan EV Station" }
+        ];
+        stations.forEach(function (station) {
+            var marker = L.marker([station.lat, station.lng]).addTo(map);
+            marker.bindPopup("<b>" + station.name + "</b>");
+        });
+    </script>
+</body>
+
+</html>
