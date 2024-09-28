@@ -1,0 +1,71 @@
+.station-detail {
+    width: 90%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .station-header {
+    text-align: center;
+  }
+  
+  .station-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .station-connections ul, .station-facilities ul, .station-reviews ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .station-connections li, .station-facilities li, .station-reviews li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .station-price {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+  
+  .station-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .btn-check-in, .btn-navigate {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn-check-in {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-navigate {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-check-in:hover, .btn-navigate:hover {
+    opacity: 0.9;
+  }
+   

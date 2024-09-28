@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "name": "Shikhar EV Charger",
+      "location": "Kathmandu, Nepal",
+      "hours": "7 AM - 6 PM",
+      "connections": [
+        { "type": "Type 2", "icon": "🔌", "power": "22kW" },
+        { "type": "CHAdeMO", "icon": "⚡", "power": "50kW" }
+      ],
+      "facilities": ["Restroom", "Free Wi-Fi", "Café"],
+      "price": "Rs 10 per kWh",
+      "rating": 4.5,
+      "reviews": [
+        { "user": "John Doe", "review": "Great place to charge your EV!", "rating": 5 },
+        { "user": "Jane Smith", "review": "Good service, but a bit crowded.", "rating": 4 }
+      ],
+      "headerImage": "../../Assets/shikhar_station.png"
+    },
+    {
+      "id": "2",
+      "name": "EV Station 2",
+      "location": "Pokhara, Nepal",
+      "hours": "8 AM - 10 PM",
+      "connections": [
+        { "type": "CCS", "icon": "⚡", "power": "100kW" },
+        { "type": "Type 1", "icon": "🔌", "power": "7.2kW" }
+      ],
+      "facilities": ["Café", "Shopping Center"],
+      "price": "Rs 12 per kWh",
+      "rating": 4.7,
+      "reviews": [
+        { "user": "Sam", "review": "Super fast charging!", "rating": 5 }
+      ],
+      "headerImage": "../../Assets/shikhar_station.png"
+    }
+  ]
+  
