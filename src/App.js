@@ -1,9 +1,10 @@
-import LoginForm from './Components/LoginForm/LoginForm';
+import React from "react";
+import welcomepage from "./Components/WelcomePage/welcomepage";
 
 function App() {
   return (
     <div>
-      <welcome/>
+      <welcomepage/>
     </div>
   );
 }
