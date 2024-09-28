@@ -5,6 +5,7 @@ import SigninForm from "./Components/SigninForm/SigninForm"
 import LoginForm from "./Components/LoginForm/LoginForm"
 import Welcomepage from "./Components/WelcomePage/welcomepage"
 import SingleStation from "./Components/StationDetails/SingleStation";
+import HomeMain from "./Components/home/HomeMain";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/signup" element={<SigninForm/>} />
           <Route path="/login" element={<LoginForm/>} />
           <Route path="/station/:id" element={<SingleStation/>} />
+          <Route path="/home" element={<HomeMain/>} />
+
 
         </Route>
       </Routes>
