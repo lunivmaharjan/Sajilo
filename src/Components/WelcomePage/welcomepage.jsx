@@ -1,17 +1,18 @@
 import React from 'react'
+import '../../index.css';
 
-const welcomepage = () => {
+const Welcomepage = () => {
   return (
-   <div className='wrapper'>
-        <form action="">
-         <h2>Welcome To Sajilo Charge</h2>
-         <h2>Find EV charge stations near you</h2>
-         
-         <button type="submit">Login</button>
-         <button type="submit">Login</button>
-        </form>
+    <div className='wrapperp-stop'>
+     <form>
+     <h1>Welcome To Sajilo Charge</h1>
+     <h1>Find EV charge stations near you</h1>
+     <button type="submit">Login</button>
+     <button type="submit">Register</button>
+      </form>
     </div>
   )
 }
 
-export default welcomepage
+export default Welcomepage
+

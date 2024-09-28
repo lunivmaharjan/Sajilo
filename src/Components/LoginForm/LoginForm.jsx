@@ -10,11 +10,11 @@ const LoginForm = () => {
         <form action="">
          <h1>Login</h1>
          <div className="input-box">
-            <input type="text" placeholder='Email' required/>
+            <input type="text" placeholder='Email' className='input_form' required/>
             <MdOutlineMail className="icon" />
          </div>
          <div className="input-box">
-            <input type="Password" placeholder='Password' required/>
+            <input type="Password" placeholder='Password' className='input_form' required/>
             <RiLockPasswordLine className="icon" />
          </div>
          <div className="remember-forgot">
