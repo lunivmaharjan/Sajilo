@@ -81,7 +81,7 @@ font-weight: 600;
 
 }
 .input_form::placeholder{
-
+ color: white;
 }
 .input_form:active{
     outline: white;
