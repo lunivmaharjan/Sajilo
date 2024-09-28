@@ -1,0 +1,91 @@
+.wrapper{
+    width: 400px;
+    /* border: solid; */
+    height: 100px !important;
+    background: radial-gradient(circle, #2E8A31, #1A5E1F) !important;
+    ;
+    border-radius:30px ;
+    /* padding: 30px 40px; */
+}
+
+.wrapper h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .input-box{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    /* margin: 40px 0; */
+    outline-color: #fff;
+
+}
+
+.input-box input{
+    width: 120%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #3e3737;
+    outline: none;
+    border-radius: 1200px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+}
+
+.input-box .input_form::placeholder {
+    color: #fff;
+}
+
+.wrapper button{
+    width: 100%;
+    height: 45px;
+    background:#fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #43bc45;
+    font-weight: 700;
+}
+
+.wrapper .register-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+color: #fff;
+text-decoration: none;
+font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.input_form{
+    color: #fff !important;
+
+}
+.input_form::placeholder{
+
+}
+.input_form:active{
+    outline: white;
+}
+.input-box{
+    color: #fff;
+}

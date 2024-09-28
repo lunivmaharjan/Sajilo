@@ -9,6 +9,7 @@ const LoginForm = () => {
     <div className='wrapper'>
         <form action="">
          <h1>Login</h1>
+         <div >
          <div className="input-box">
             <input type="text" placeholder='Email' className='input_form' required/>
             <MdOutlineMail className="icon" />
@@ -17,16 +18,15 @@ const LoginForm = () => {
             <input type="Password" placeholder='Password' className='input_form' required/>
             <RiLockPasswordLine className="icon" />
          </div>
+         </div>
          <div className="remember-forgot">
-           <label><input type="checkbox"/>Remember me</label>
+           <label style={{
+            marginRight:30,
+           }}><input type="checkbox"/>Remember me</label> 
             <a href="#">Forget Password</a>
          </div>
 
          <button type="submit">Login</button>
-
-         <div className="register-link">
-           <p>Don't have an account? <a href="#">Register</a></p>
-         </div>
         </form>
     </div>
   )

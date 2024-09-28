@@ -2,23 +2,23 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "../App.css"
 import "../index.css"
+import logo from "./Assets/logo.png"
 
 function Navbar() {
   return (
     <div className='nav'>
-        <div className="flex">
-                <h2>Sajilo Charge</h2>
-        </div>
         <div className="menItems">
-            <Link to={"/"}>
-                Home
-            </Link>
+        <div className="flex">
+          <Link to={"/"}>
+          <img src={logo} alt='fireSpot'/>
+          </Link>
+        </div>
             <Link to={"/login"}>
                 Login
             </Link>
-            <Link to={"/signup"}>
+            <a href={"/signup"}>
                 Signup
-            </Link>
+            </a>
         </div>
       
     </div>

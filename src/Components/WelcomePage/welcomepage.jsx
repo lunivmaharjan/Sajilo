@@ -1,14 +1,14 @@
 import React from 'react'
 import '../../index.css';
+import './welcomepage.css'
 
 const Welcomepage = () => {
   return (
-    <div className='wrapperp-stop'>
+    <div className='wrapperp'>
      <form>
-     <h1>Welcome To Sajilo Charge</h1>
-     <h1>Find EV charge stations near you</h1>
-     <button type="submit">Login</button>
-     <button type="submit">Register</button>
+     <h2>Welcome To Sajilo Charge</h2>
+     <br></br>
+     <p>Find EV charge stations near you</p>
       </form>
     </div>
   )
