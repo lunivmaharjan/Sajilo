@@ -76,7 +76,7 @@
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
         var stations = [
-            { lat: 27.7172, lng: 85.3240, name: "Ram-Ram EV Station"  },
+            { lat: 27.7172, lng: 85.3240, name: "Ram-Ram EV Station", description: "A convenient EV charging station located at Kathmandu." },
             { lat: 27.6710, lng: 85.4298, name: "Kathmandu EV Station" },
             { lat: 27.6816, lng: 85.3222, name: "Green-Patan EV Station" },
             { lat: 27.6234, lng: 85.5420, name: "Ram EV Station" },
@@ -86,6 +86,8 @@
         stations.forEach(function (station) {
             var marker = L.marker([station.lat, station.lng]).addTo(map);
             marker.bindPopup("<b>" + station.name + "</b>");
+
+        
         });
     </script>
 </body>
